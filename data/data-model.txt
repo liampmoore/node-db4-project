@@ -1,0 +1,25 @@
+Recipes
+id, name
+
+Ingredients
+id, name
+
+Recipe_ingregients
+recipe_id, ingredient_id, quantity
+
+Recipe_instructions
+id, recipe_id, step, text
+
+
+Recipes to ingredients are many to many.
+
+Recipes to Recipe_ingredients are one to many.
+
+Recipes to Recipe_instructions are one to many.
+
+Ingredients to Recipe_ingredients are one to many.
+
+Ingredients to recipe Recipe_instructions are not directly related.
+
+Recipe Recipe_ingredients to Recipe_instructions are not directly related.
+
