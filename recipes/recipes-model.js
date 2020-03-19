@@ -1,11 +1,6 @@
 const db = require('../data/dbConfig.js');
 
-module.exports = {
-  getRecipes,
-  getShoppingList,
-  getInstructions,
-  
-};
+
 
 function getRecipes() {
   return db('recipes');
@@ -37,3 +32,9 @@ const getShoppingList = async (id) => {
     console.error(err)
   }
 }
+
+module.exports = {
+  getRecipes,
+  getShoppingList,
+  getInstructions
+};
