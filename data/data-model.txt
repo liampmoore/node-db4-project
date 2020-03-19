@@ -1,14 +1,14 @@
 Recipes
-id, name
+id, recipe_name
 
 Ingredients
-id, name
+id, ingredient_name
 
 Recipe_ingregients
 recipe_id, ingredient_id, quantity
 
-Recipe_instructions
-id, recipe_id, step, text
+steps
+id, recipe_id, instructions, step_number
 
 
 Recipes to ingredients are many to many.
